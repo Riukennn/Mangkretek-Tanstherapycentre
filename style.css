@@ -1,177 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding-top: 56px; /* Menyesuaikan dengan navbar fixed-top */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
 .banner {
-    background: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg")
-      no-repeat center center;
-    background-size: cover;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color: #fff;
-  }
-  
-  .lingkaran {
-    display: inline-block;
-    border-radius: 50%;
-    width: 150px;
-    margin: auto;
-    height: 150px;
-    color: #fff;
-    background-color: #dc3545;
-  }
-  
-  .lingkaran i {
-    position: relative;
-    top: 30px;
-  }
-  
-  .crop-img {
-    object-fit: cover;
-  }
-  
-  .tim img {
-    width: 250px;
-    border: 10px solid #cccccc;
-  }
-  
-  a.social {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    border-radius: 50%;
-    background-color: #333;
-    line-height: 40px;
-  }
-  
-  .client img {
-    height: auto;
-    max-height: 50px;
-  }
-  
-  .kontak {
-    background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat
-      center center;
-    background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    color: #fff;
-  }
+  background: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding: 10% 0;
+  color: #fff;
+  text-align: center;
+}
 
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
 
-  .faq-container {
-    display: flex;
-    position: relative;
-    width: 90%; /* Lebih lebar */
-    max-width: 1400px; /* Tingkatkan batas lebar */
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Tingkatkan shadow untuk efek 3D */
-    padding: 20px; /* Tambah padding untuk memberi ruang */
+.lingkaran i {
+  font-size: 40px;
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #cccccc;
+}
+
+a.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 40px;
+  text-align: center;
+}
+
+.client img {
+  max-height: 50px;
+  height: auto;
+}
+
+.kontak {
+  background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 10% 0;
+  color: #fff;
+  text-align: center;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 90%;
+  max-width: 1400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 20px auto;
 }
 
 .faq-buttons {
-    background-color: #8b0000;
-    color: white;
-    padding: 30px; /* Lebih besar */
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Lebih renggang */
-    border-radius: 10px 0 0 10px; /* Sesuaikan dengan container */
+  background-color: #8b0000;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .faq-buttons button {
-    background-color: white;
-    color: #8b0000;
-    border: none;
-    padding: 18px 20px; /* Lebih besar */
-    text-align: left;
-    font-size: 18px; /* Perbesar font */
-    border-radius: 30px; /* Lebih bulat */
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: white;
+  color: #8b0000;
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .faq-buttons button:hover {
-    background-color: #8b0000;
-    color: white;
+  background-color: #8b0000;
+  color: white;
 }
 
 .faq-answer {
-    flex-grow: 1;
-    padding: 30px; /* Lebih banyak ruang */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
 #answer-text {
-    font-size: 20px; /* Perbesar teks jawaban */
-    line-height: 1.8; /* Tingkatkan jarak antar baris */
-    color: #333;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
 }
 
 .faq-label {
-    position: absolute;
-    right: 30px; /* Jarak lebih jauh ke kanan */
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 56px; /* Perbesar teks FAQ */
-    font-weight: bold;
-    color: #d3d3d3;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    opacity: 0.4; /* Lebih transparan */
-    user-select: none;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 56px;
+  font-weight: bold;
+  color: #d3d3d3;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  opacity: 0.4;
+  user-select: none;
 }
 
 .container {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
+
 .title {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
+
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
+
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
 }
+
 .card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #8B0000;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #8b0000;
 }
+
 .card p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
 }
+
 .price {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0;
-    color: #8B0000;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #8b0000;
 }
+
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #8B0000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
+
 .button:hover {
-    background-color: #a50000;
+  background-color: #a50000;
 }
